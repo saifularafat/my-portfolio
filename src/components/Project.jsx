@@ -49,8 +49,12 @@ const Project = () => {
                                 <div
                                     className='flex items-center justify-between text-white px-2 py-3'>
                                     <Button adders={href} label='Demo' />
-                                    <Button adders={href1} label='Server' />
-                                    <Button adders={href2} label='Client' />
+                                    <div className=''>
+                                        <span className='mr-3'>
+                                            <Button adders={href1} label='Server' />
+                                        </span>
+                                        <Button adders={href2} label='Client' />
+                                    </div>
                                 </div>
                             </div>)
                         }
