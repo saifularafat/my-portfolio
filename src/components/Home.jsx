@@ -3,6 +3,7 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import myImage from './../assets/my-img/img.jpg'
 import NavBer from './NavBer';
 import { Link } from 'react-scroll';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
     return (
@@ -20,9 +21,29 @@ const Home = () => {
                 name="home"
                 className='h-screen'>
                 <div className="max-w-screen-lg mx-auto flex items-center justify-between h-full px-4 md:flex-row flex-col-reverse mt-40 md:mt-0">
-                    <div className='flex flex-col justify-center h-full md:w-1/2'>
+                    <div
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1200"
+                        className='flex flex-col justify-center h-full md:w-1/2'>
                         <h2 className='md:text-7xl text-5xl text-white font-extrabold'><span className='text-sky-500'>Saiful</span> Islam</h2>
-                        <h2 className='text-3xl md:text-5xl font-bold text-white'> I'am a junior <span className='text-sky-500 md:text-6xl text-4xl'> <br /> Web Developer</span> </h2>
+                        <h2 className='text-2xl md:text-4xl md:font-bold font-semibold  text-white'> I'am a junior <span className='text-sky-500 md:text-[27px] text-xl'>
+
+                            <TypeAnimation
+                                sequence={[
+                                    " Web Developer",
+                                    1000,
+                                    " Font End Developer",
+                                    1000,
+                                ]}
+                                speed={50}
+                                style={{
+                                    fontSize: ''
+                                }}
+                                repeat={Infinity}
+                            />
+                        </span> </h2>
+
                         <p className='max-w-md py-4 text-slate-500'></p>
                         <div className='hidden sm:block'>
                             <Link
@@ -40,7 +61,11 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='md:w-1/2 max-h-screen'>
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-easing="linear"
+                        data-aos-duration="1200"
+                        className='md:w-1/2 max-h-screen'>
                         <img src={myImage} alt="my profile" className="md:w-5/6 w-4/4 md:h-5/6 h-3/4 rounded-full border-4 border-sky-400" />
                     </div>
                 </div>

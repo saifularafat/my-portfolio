@@ -82,7 +82,10 @@ const Skills = () => {
                 className=''>
                 <div className='max-w-screen-xl p-4 md:mx-auto flex flex-col items-center pt-12 w-full h-full py-16'>
                     <SectionTitle title='< Skills />' subTitle="These are the technology skill l've worked with " />
-                    <div className='w-full grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-6 sm:px-5 pt-16'>
+                    <div
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                        className='w-full grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-6 sm:px-5 pt-16'>
                         {
                             skills.map(({ id, img, title, style }) => <div
                                 key={id}

@@ -35,8 +35,11 @@ const Project = () => {
                 className='md:h-screen'>
                 <div className='md:max-w-screen-xl p-4 md:mx-auto flex flex-col justify-center w-full h-full py-24'>
                     {/* TODO subtitle */}
-                    <SectionTitle title='< Projects />' subTitle=" " />
-                    <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-6 sm:px-5 pt-16'>
+                    <SectionTitle title='< Projects />' subTitle="I completed these projects visit my beautiful project " />
+                    <div
+                       data-aos="flip-right"
+                        data-aos-duration="1500"
+                        className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-6 sm:px-5 pt-16'>
                         {
                             projects.map(({ id, img, href, href1, href2 }) => <div
                                 key={id}
