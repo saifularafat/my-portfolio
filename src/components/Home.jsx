@@ -1,4 +1,4 @@
-import banner from '../assets/bg/banner-bg.png'
+import banner from '../assets/bg/bg_1.png'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import myImage from './../assets/my-img/img.jpg'
 import NavBer from './NavBer';
@@ -15,7 +15,7 @@ const Home = () => {
                 height: '100%',
                 width: "100%"
             }}
-        >
+            className='' >
             <NavBer />
             <div
                 name="home"
@@ -26,23 +26,25 @@ const Home = () => {
                         data-aos-easing="linear"
                         data-aos-duration="1200"
                         className='flex flex-col justify-center h-full md:w-1/2'>
-                        <h2 className='md:text-7xl text-5xl text-white font-extrabold'><span className='text-sky-500'>Saiful</span> Islam</h2>
-                        <h2 className='text-2xl md:text-4xl md:font-bold font-semibold  text-white'> I'am a junior <span className='text-sky-500 md:text-[27px] text-xl'>
-
-                            <TypeAnimation
-                                sequence={[
-                                    " Web Developer",
-                                    1000,
-                                    " Font End Developer",
-                                    1000,
-                                ]}
-                                speed={50}
-                                style={{
-                                    fontSize: ''
-                                }}
-                                repeat={Infinity}
-                            />
-                        </span> </h2>
+                        <h2 className='text-xl md:text-2xl md:font-bold text-white'> Hi,👋 my name is </h2>
+                        <h2 className='md:text-7xl text-5xl text-white font-extrabold pb-3'><span className='text-sky-500'>Saiful</span> Islam</h2>
+                        <h2 className='text-xl md:text-2xl md:font-bold font-semibold text-white'> I'm junior <span className='text-sky-500 md:text-[34px] text-xl'>
+                                <TypeAnimation
+                                    sequence={[
+                                        "Web Developer",
+                                        1000,
+                                        "Front End Developer",
+                                        1000,
+                                        "MERN Stack Developer",
+                                        1000,
+                                    ]}
+                                    speed={50}
+                                    style={{
+                                        fontSize: ''
+                                    }}
+                                    repeat={Infinity}
+                                />
+                            </span> </h2>
 
                         <p className='max-w-md py-4 text-slate-500'></p>
                         <div className='hidden sm:block'>

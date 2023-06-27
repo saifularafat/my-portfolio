@@ -81,7 +81,7 @@ const Skills = () => {
                 name='skills'
                 className=''>
                 <div className='max-w-screen-xl p-4 md:mx-auto flex flex-col items-center pt-12 w-full h-full py-16'>
-                    <SectionTitle title='< Skills />' subTitle="These are the technology skill l've worked with " />
+                    <SectionTitle title='\* Skills */' subTitle="These are the technology skill l've worked with " />
                     <div
                         data-aos="fade-up"
                         data-aos-duration="1500"

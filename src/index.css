@@ -14,7 +14,7 @@
 }
 
 .nav_link{
-  @apply mx-4 px-1 font-medium capitalize text-gray-400 text-xl duration-200 hover:scale-100 hover:text-sky-500 hover:border-b-2 border-sky-500 cursor-pointer
+  @apply mx-4 px-1 font-medium capitalize text-gray-300 text-2xl duration-200 hover:scale-100 hover:text-sky-500 hover:border-b-2 border-sky-500 cursor-pointer
 }
 .default{
   @apply mx-4 px-1 font-medium capitalize text-gray-400 text-lg duration-200 

@@ -11,6 +11,6 @@ export default {
       logoText: ['Great Vibes'],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 

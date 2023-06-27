@@ -62,7 +62,7 @@ const NavBer = () => {
                                 links?.map(({ link, id }) => <li
                                     key={id}
                                     // className={({isActive}) => (isActive ? 'text-xl text-white' : '' )}>
-                                    className="py-5 text-3xl cursor-pointer capitalize hover:border-sky-500 hover:border-b-2 px-3" >
+                                    className="py-5 text-3xl cursor-pointer z-10 capitalize hover:border-sky-500 hover:border-b-2 px-3" >
                                     <Link
                                     onClick={() => setISOpen(!isOpen)}
                                     to={link} 

@@ -8,7 +8,7 @@ const Contact = () => {
             className='py-24'>
             <Container>
                 <div>
-                    <SectionTitle title='< Contact />' subTitle='Submit the form below to get in touch with me.' />
+                    <SectionTitle title='\* Contact */' subTitle='Submit the form below to get in touch with me.' />
                 </div>
                 <div
                     data-aos="zoom-in"
