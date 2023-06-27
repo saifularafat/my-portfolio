@@ -13,7 +13,7 @@ const Project = () => {
             href: 'https://sk-academe.web.app/',
             href1: 'https://github.com/saifularafat/sports-academy-server',
             href2: 'https://github.com/saifularafat/sports_academy_client',
-            technology: 'node.js, mongoDB, react.js, ',
+            technology: 'node.js, mongoDB, react.js, saiful ',
         },
         {
             id: 2,
@@ -21,7 +21,7 @@ const Project = () => {
             href: 'https://omega-robot-kids.web.app/',
             href1: 'https://github.com/saifularafat/omega-robot-toy-server-A11',
             href2: 'https://github.com/saifularafat/omega_robot_toy_client_A11',
-            technology: 'node.js, mongoDB, react.js, ',
+            technology: 'node.js, mongoDB, react.js, sultan ',
         },
         {
             id: 3,
