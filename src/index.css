@@ -27,3 +27,12 @@
   @apply flex flex-col justify-center items-center absolute top-0 left-0 w-full
   h-screen bg-gradient-to-b from-gray-950 to-gray-700 text-slate-500
 }
+
+.details_btn{
+  @apply w-full mx-auto text-center py-2 rounded-b-lg border border-sky-400
+   text-lg font-medium tracking-wide text-white bg-sky-500 hover:bg-transparent transition duration-200
+}
+.close_btn{
+  @apply border-sky-500 border rounded-lg text-white py-[6px] px-4 bg-sky-600 text-lg hover:bg-transparent 
+  hover:text-sky-400 transition duration-200
+}

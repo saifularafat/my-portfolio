@@ -1,4 +1,3 @@
-import { AiOutlineDownload } from 'react-icons/ai';
 import aboutImage from '../assets/my-img/about.jpg'
 import SectionTitle from './SectionTitle';
 import PDFDownloadButton from './PdfDownload';
@@ -37,12 +36,7 @@ const About = () => {
                         <h4 className='text-2xl text-white font-medium'> Number:  <span className='text-xl text-slate-400 font-medium tracking-wide'>+880 1646-531069 </span> </h4>
                         <h4 className='text-2xl text-white font-medium'> Adders:  <span className='text-xl text-slate-400 font-medium tracking-wide'>Cumilla, Bangladesh</span></h4>
                     </div>
-                    <button
-                     data-aos="flip-left"
-                     data-aos-duration="1500"
-                        className='border-2 border-[#432848] px-5 py-3 mt-12 text-xl font-medium text-white rounded-xl bg-orange-500 hover:bg-sky-500 hover:border-sky-600 transition duration-300 animate-bounce hover:animate-none flex items-center gap-2 shadow-lg' >
-                        <PDFDownloadButton /> <AiOutlineDownload className='w-6 h-6' />
-                    </button>
+                    <PDFDownloadButton />
                 </div>
             </div>
         </div>
