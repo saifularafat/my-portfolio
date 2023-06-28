@@ -1,7 +1,7 @@
 
 import About from './components/About';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Home from './components/Home';
 import Project from './components/Project';
 import Skills from './components/Skills';
@@ -16,7 +16,7 @@ const App = () => {
       <Project />
       <Skills />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
