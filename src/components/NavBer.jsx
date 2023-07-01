@@ -40,7 +40,6 @@ const NavBer = () => {
                     {
                         links?.map(({ link, id }) => <li
                             key={id}
-                            // className={({isActive}) => (isActive ? 'text-xl text-white' : '' )}>
                             className="nav_link" >
                             <Link to={link} duration={500}>{link}</Link>
                         </li>)
@@ -49,7 +48,7 @@ const NavBer = () => {
                 {/* mobile responsive */}
                 <div
                     onClick={() => setISOpen(!isOpen)}
-                    className="cursor-pointer z-10 text-gray-400 md:hidden">
+                    className="cursor-pointer z-10 text-gray-400 md:hidden h-full">
                     {
                         isOpen ? <FaTimes size={30} /> : <FaBars size={30} />
                     }
