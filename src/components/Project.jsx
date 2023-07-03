@@ -37,12 +37,12 @@ const Project = () => {
                         {projects.map(({ id, img, href, href1, href2 }) => (
                             <div
                                 key={id}
-                                className="shadow-lg w-[340px] md:h-[355px] md:w-full mx-auto shadow-slate-600 rounded-lg"
+                                className="shadow-lg md:h-[355px] md:w-full mx-auto shadow-slate-600 rounded-lg"
                             >
                                 <img
                                     src={img}
                                     alt="webSiteImage"
-                                    className="rounded-lg duration-200 hover:scale-105 h-56"
+                                    className="rounded-lg duration-200 hover:scale-105 w-full h-56"
                                 />
                                 <div className="flex items-center justify-between text-white px-2 py-3">
                                     <Button adders={href} label="Demo" />
@@ -59,7 +59,7 @@ const Project = () => {
                                     </div>
                                 </div>
                                 {/* Modal section */}
-                                <div className="md:mt-4 mt-2 md:block hidden">
+                                <div className="md:mt-4 mt-2">
                                     <a href={`/${id}`}>
                                         <button onClick={() => openModal(id)} className="details_btn">
                                             Details
@@ -70,30 +70,30 @@ const Project = () => {
                                         <dialog open onClose={closeModal} className="modal modal-bottom sm:modal-middle">
                                             <form method="dialog" className="md:w-11/12 p-6 h-full space-y-1 rounded-xl bg-gradient-to-tr from-[#211b33] to-[#201322] shadow-2xl">
                                                 <h3 className="font-bold text-2xl text-sky-500 text-center">{selectedProject.project_name}</h3>
-                                                <div className='flex items-center justify-center gap-x-5'>
+                                                <div className='md:flex items-center justify-center gap-x-5 hidden'>
                                                     <img src={selectedProject?.img1} alt="" className='md:w-56 md:h-28 hover:scale-110 rounded-lg border-b-2 border-sky-600' />
                                                     <img src={selectedProject?.img2} alt="" className='md:w-56 md:h-28 hover:scale-110 rounded-lg border-b-2 border-orange-700' />
                                                     <img src={selectedProject?.img3} alt="" className='md:w-56 md:h-28 hover:scale-110 rounded-lg border-b-2 border-red-400' />
                                                     <img src={selectedProject?.img4} alt="" className='md:w-56 md:h-28 hover:scale-110 rounded-lg border-b-2 border-yellow-400' />
                                                 </div>
-                                                <div className='flex items-center gap-6 pt-2'>
-                                                    <div className='w-1/2 border-2 border-sky-400 p-2 rounded-lg'>
+                                                <div className='md:flex items-center gap-6 pt-2'>
+                                                    <div className='md:w-1/2 md:h-[170px] md:border-2 border-[#211C30] p-3 rounded-lg shadow-2xl'>
                                                         <p className="text-slate-200">
-                                                            <span className='text-xl font-semibold text-slate-400'>Technology:</span> <br />
-                                                            <span className='text-base font-medium text-sky-300'>{selectedProject?.technology}.</span>
+                                                            <span className='md:text-xl text-lg font-semibold text-slate-400'>Technology:</span> <br />
+                                                            <span className='md:text-base text-sm font-medium text-sky-300'>{selectedProject?.technology}.</span>
                                                         </p>
-                                                        <p className='text-justify text-white pt-1'>
-                                                            <span className='text-xl font-semibold text-slate-400'>Project Details: <br /></span>
+                                                        <p className='text-justify text-sm text-white pt-1'>
+                                                            <span className='md:text-xl text-lg font-semibold text-slate-400'>Project Details: <br /></span>
                                                             {selectedProject?.project_details}
                                                         </p>
                                                     </div>
-                                                    <div className='w-1/2 border-2 border-sky-400 p-2 rounded-lg'>
+                                                    <div className='md:w-1/2 md:h-[170px] md:border-2 border-[#211C30] p-3 rounded-lg shadow-2xl'>
                                                         <p className="text-slate-200">
-                                                            <span className='text-xl font-semibold text-slate-400'>Functionality: <br /></span>
+                                                            <span className='text-xl font-semibold text-slate-400'>Functionality:</span>
                                                             <br />
                                                             <span className='text-base font-medium text-sky-300'>{selectedProject?.Functionality}</span>
                                                         </p>
-                                                        <p className='text-justify text-white'>
+                                                        <p className='text-justify text-white md:block hidden'>
                                                             <span className='text-2xl font-semibold text-slate-400'>Roles: <br /></span>
                                                             {selectedProject?.Roles}
                                                         </p>
