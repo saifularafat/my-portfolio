@@ -31,7 +31,7 @@ const SocialLinks = () => {
             child: (<>
                 Resume <FaFilePdf size={30} />
             </>),
-            href: "https://drive.google.com/file/d/1OSsV_GgEJunnZWWi64ZwP7izkSV88CKu/view",  
+            href: "https://drive.google.com/file/d/1z7KMUrVXMerI_tKW_42EK8JU3jh5OwpW/view?usp=sharing",  
             rel: "noreferrer",
             style: 'rounded-br-md'
         },
