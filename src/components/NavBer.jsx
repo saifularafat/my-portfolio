@@ -48,7 +48,7 @@ const NavBer = () => {
                 {/* mobile responsive */}
                 <div
                     onClick={() => setISOpen(!isOpen)}
-                    className="cursor-pointer z-10 text-gray-400 md:hidden h-full">
+                    className="cursor-pointer z-10 text-gray-400 md:hidden h-full pt-4">
                     {
                         isOpen ? <FaTimes size={30} /> : <FaBars size={30} />
                     }
@@ -56,12 +56,12 @@ const NavBer = () => {
 
                 {
                     isOpen && (
-                        <ul className="nav_mobile">
+                        <ul className="nav_mobile bg-slate-600 ">
                             {
                                 links?.map(({ link, id }) => <li
                                     key={id}
                                     // className={({isActive}) => (isActive ? 'text-xl text-white' : '' )}>
-                                    className="py-5 text-3xl cursor-pointer z-10 capitalize hover:border-sky-500 hover:border-b-2 px-3" >
+                                    className="py-4 text-xl cursor-pointer z-10 capitalize hover:border-sky-500 hover:border-b-2 px-3 bg-slate-900 w-full" >
                                     <Link
                                     onClick={() => setISOpen(!isOpen)}
                                     to={link} 
